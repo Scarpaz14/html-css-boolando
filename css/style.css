@@ -17,8 +17,8 @@
 
 .col {
     float: left;
-    width: calc( 100% / 3 - 8px);
-    margin: 0 4px;
+    width: calc( 100% / 3 - 10px);
+    margin: 0 5px;
 }
 
 .product {
