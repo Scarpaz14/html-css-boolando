@@ -1,37 +1,100 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    width: 1000px; 
+.container {
+    max-width: 1000px;
     margin: auto;
     margin-top: 20px;
 }
-
-.clearfix::after{
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-.col-1, .col-2, .col-3{
-    background-color: red;
+.col {
     float: left;
-    min-height:400px;
-    width:30%; 
-    margin: auto 10px;   
-}
-    
-.container-2{
-    margin-top: 20px;
+    width: calc( 100% / 3 - 8px);
+    margin: 0 4px;
 }
 
-.col-4, .col-5, .col-6{
-    background-color: green;
-    float: left;
-    min-height:400px;
-    width:30%; 
-    margin: auto 10px;  
-} 
+.product {
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    display: block;
+}
+
+.discount, .materials, .whishlist, .materials-2{
+    display: block;
+    position: absolute;
+    padding: 3px; 
+    font-size: 13px;
+}
+
+.discount{
+    background-color:red;
+    color:white;
+    top: 420px;
+    left:0px;
+}
+
+.materials{
+    background-color:green;
+    color:white;
+    top: 420px;
+    left:40px;
+}
+
+.materials-2{
+    background-color:green;
+    color:white;
+    top: 420px;
+    left:0px;
+
+}
+
+.whishlist{
+    background-color: white;
+    top:20px;
+    right:0px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+h4{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.price, .sale-price{
+    font-size:13px;
+}
+.price{
+    color: red;
+}
+
+.sale-price{
+    color:black;
+    text-decoration: line-through;
+}
+
+.info{
+    margin-bottom: 30px;
+    padding-top:5px;
+}
+
+.product .img-2 {
+    display: none;
+}
+
+.product:hover .img-1 {
+    display: none;
+}
+.product:hover .img-2 {
+    display: block;
+}
