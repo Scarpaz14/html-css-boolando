@@ -31,7 +31,7 @@
 }
 
 .discount, .materials, .whishlist, .materials-2{
-    display: block;
+    display:inline-block;
     position: absolute;
     padding: 3px; 
     font-size: 13px;
@@ -40,21 +40,21 @@
 .discount{
     background-color:red;
     color:white;
-    top: 420px;
+    bottom: 20px;
     left:0px;
 }
 
 .materials{
     background-color:green;
     color:white;
-    top: 420px;
+    bottom: 20px;
     left:40px;
 }
 
 .materials-2{
     background-color:green;
     color:white;
-    top: 420px;
+    bottom: 20px;
     left:0px;
 
 }
@@ -73,12 +73,13 @@ h4{
 }
 .price, .sale-price{
     font-size:13px;
+    font-weight: 600;
 }
-.price{
+.sale-price{
     color: red;
 }
 
-.sale-price{
+.price{
     color:black;
     text-decoration: line-through;
 }
@@ -94,7 +95,9 @@ h4{
 
 .product:hover .img-1 {
     display: none;
+    
 }
 .product:hover .img-2 {
     display: block;
+    
 }
